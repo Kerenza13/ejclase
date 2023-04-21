@@ -1,0 +1,20 @@
+{
+	"videojuegos": [
+	  {
+		"titulo": "The Legend of Zelda: Breath of the Wild",
+		"plataforma": "Nintendo Switch",
+		"genero": "Aventura"
+	  },
+	  {
+		"titulo": "Super Mario Odyssey",
+		"plataforma": "Nintendo Switch",
+		"genero": "Plataformas"
+	  },
+	  {
+		"titulo": "Cyberpunk 2077",
+		"plataforma": "PlayStation 5",
+		"genero": "RPG"
+	  }
+	]
+  }
+  

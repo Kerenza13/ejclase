@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Videojuegos de Morillas Delgado, Carlos</title>
-	<script type="text/javascript" src="cargarxml.js"></script>
-</head>
-<body onload="cargarDatos()">
-	<h1>Videojuegos</h1>
-	<ul id="juegos">
-	</ul>
-</body>
+  <head>
+    <title>Videojuegos</title>
+  </head>
+  <body>
+    <h1>Videojuegos</h1>
+    <div id="videojuegos-container"></div>
+
+    <script>
+      fetch("videojuegos.json")
+        .then(response => response.json())
+        .then(data => {
+          const videojuegosContainer = document.getElementById("videojuegos-container");
+
+          data.videojuegos.forEach(videojuego => {
+            const titulo = videojuego.titulo;
+            const plataforma = videojuego.plataforma;
+            const genero = videojuego.genero;
+
+            const videojuegoDiv = document.createElement("div");
+            videojuegoDiv.innerHTML = `
+              <h2>${titulo}</h2>
+              <p><strong>Plataforma:</strong> ${plataforma}</p>
+              <p><strong>Género:</strong> ${genero}</p>
+            `;
+
+            videojuegosContainer.appendChild(videojuegoDiv);
+          });
+        });
+    </script>
+  </body>
 </html>
