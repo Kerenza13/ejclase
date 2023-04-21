@@ -1,0 +1,19 @@
+<datos>
+  <persona>
+    <nombre>Morillas Delgado, Carlos</nombre>
+    <juegos>
+      <juego>
+        <nombre>Albion Online</nombre>
+      </juego>
+      <juego>
+        <nombre>League of Legends (LoL)</nombre>
+      </juego>
+      <juego>
+        <nombre>Call of Duty (COD)</nombre>
+      </juego>
+      <juego>
+        <nombre>Ultrakill</nombre>
+      </juego>
+    </juegos>
+  </persona>
+</datos>
