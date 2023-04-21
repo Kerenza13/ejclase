@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videojuegos>
+  <juego>
+    <nombre>Mario Kart 8 Deluxe</nombre>
+    <fechaLanzamiento>28 de abril de 2017</fechaLanzamiento>
+  </juego>
+  <juego>
+    <nombre>The Legend of Zelda: Breath of the Wild</nombre>
+    <fechaLanzamiento>3 de marzo de 2017</fechaLanzamiento>
+  </juego>
+  <juego>
+    <nombre>Animal Crossing: New Horizons</nombre>
+    <fechaLanzamiento>20 de marzo de 2020</fechaLanzamiento>
+  </juego>
+</videojuegos>

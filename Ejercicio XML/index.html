@@ -2,11 +2,35 @@
 <html>
 <head>
 	<title>Videojuegos de Morillas Delgado, Carlos</title>
-	<script type="text/javascript" src="cargarxml.js"></script>
+	<script type="text/javascript">
+		function cargarDatos() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					myFunction(this);
+				}
+			};
+			xhttp.open("GET", "Datos.xml", true);
+			xhttp.send();
+		}
+		
+		function myFunction(xml) {
+			var xmlDoc = xml.responseXML;
+			var juegos = xmlDoc.getElementsByTagName("juego");
+			var lista = document.getElementById("juegos");
+			for (var i = 0; i < juegos.length; i++) {
+				var nombre = juegos[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+				var plataforma = juegos[i].getElementsByTagName("plataforma")[0].childNodes[0].nodeValue;
+				var juego = document.createElement("li");
+				var texto = document.createTextNode(nombre + " - " + plataforma);
+				juego.appendChild(texto);
+				lista.appendChild(juego);
+			}
+		}
+	</script>
 </head>
 <body onload="cargarDatos()">
-	<h1>Videojuegos
-    </h1>
+	<h1>Videojuegos</h1>
 	<ul id="juegos">
 	</ul>
 </body>
