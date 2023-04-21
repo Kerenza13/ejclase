@@ -1,19 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <datos>
-  <persona>
-    <nombre>Morillas Delgado, Carlos</nombre>
-    <juegos>
-      <juego>
-        <nombre>Albion Online</nombre>
-      </juego>
-      <juego>
-        <nombre>League of Legends (LoL)</nombre>
-      </juego>
-      <juego>
-        <nombre>Call of Duty (COD)</nombre>
-      </juego>
-      <juego>
-        <nombre>Ultrakill</nombre>
-      </juego>
-    </juegos>
-  </persona>
+	<persona>
+		<nombre>Morillas Delgado, Carlos</nombre>
+		<juegos>
+			<juego>
+				<nombre>Albion Online</nombre>
+				<plataforma>PC</plataforma>
+			</juego>
+			<juego>
+				<nombre>League of Legends (LoL)</nombre>
+				<plataforma>PC</plataforma>
+			</juego>
+			<juego>
+				<nombre>Call of Duty (COD)</nombre>
+				<plataforma>PlayStation 4</plataforma>
+			</juego>
+			<juego>
+				<nombre>Ultrakill</nombre>
+				<plataforma>PC</plataforma>
+			</juego>
+		</juegos>
+	</persona>
 </datos>
