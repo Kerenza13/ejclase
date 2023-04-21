@@ -1,15 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<videojuegos>
-  <juego>
-    <nombre>Mario Kart 8 Deluxe</nombre>
-    <fechaLanzamiento>28 de abril de 2017</fechaLanzamiento>
-  </juego>
-  <juego>
-    <nombre>The Legend of Zelda: Breath of the Wild</nombre>
-    <fechaLanzamiento>3 de marzo de 2017</fechaLanzamiento>
-  </juego>
-  <juego>
-    <nombre>Animal Crossing: New Horizons</nombre>
-    <fechaLanzamiento>20 de marzo de 2020</fechaLanzamiento>
-  </juego>
-</videojuegos>
+<datos>
+	<persona>
+		<nombre>Morillas Delgado, Carlos</nombre>
+		<juegos>
+			<juego>
+				<nombre>Albion Online</nombre>
+				<plataforma>PC</plataforma>
+				<fecha>2017-07-17</fecha>
+			</juego>
+			<juego>
+				<nombre>League of Legends (LoL)</nombre>
+				<plataforma>PC</plataforma>
+				<fecha>2009-10-27</fecha>
+			</juego>
+			<juego>
+				<nombre>Call of Duty (COD)</nombre>
+				<plataforma>PlayStation 4</plataforma>
+				<fecha>2019-10-25</fecha>
+			</juego>
+			<juego>
+				<nombre>Ultrakill</nombre>
+				<plataforma>PC</plataforma>
+				<fecha>2020-09-03</fecha>
+			</juego>
+		</juegos>
+	</persona>
+</datos>
