@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Videojuegos</title>
-  </head>
-  <body>
-    <h1>Videojuegos</h1>
-    <div id="videojuegos-container"></div>
+<head>
+	<title>Videojuegos</title>
+	<script>
+	$(document).ready(function() {
+		$.getJSON("Datos.json", function(data) {
+			$.each(data.videojuegos, function(i, juego) {
+				var nombre = juego.nombre;
+				var desarrollador = juego.desarrollador;
+				var lanzamiento = juego.lanzamiento;
+				var plataforma = juego.plataforma;
 
-    <script>
-      fetch("videojuegos.json")
-        .then(response => response.json())
-        .then(data => {
-          const videojuegosContainer = document.getElementById("videojuegos-container");
+				var juegoHTML = "<div class='juego'>";
+				juegoHTML += "<h2>" + nombre + "</h2>";
+				juegoHTML += "<p><strong>Desarrollador:</strong> " + desarrollador + "</p>";
+				juegoHTML += "<p><strong>Lanzamiento:</strong> " + lanzamiento + "</p>";
+				juegoHTML += "<p><strong>Plataforma:</strong> " + plataforma + "</p>";
+				juegoHTML += "</div>";
 
-          data.videojuegos.forEach(videojuego => {
-            const titulo = videojuego.titulo;
-            const plataforma = videojuego.plataforma;
-            const genero = videojuego.genero;
-
-            const videojuegoDiv = document.createElement("div");
-            videojuegoDiv.innerHTML = `
-              <h2>${titulo}</h2>
-              <p><strong>Plataforma:</strong> ${plataforma}</p>
-              <p><strong>Género:</strong> ${genero}</p>
-            `;
-
-            videojuegosContainer.appendChild(videojuegoDiv);
-          });
-        });
-    </script>
-  </body>
+				$("#videojuegos").append(juegoHTML);
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="videojuegos"></div>
+</body>
 </html>
